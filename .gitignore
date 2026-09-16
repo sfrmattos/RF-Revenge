@@ -1,0 +1,10 @@
+private/
+.pio/
+.vscode/
+__pycache__/
+*.bin
+*.elf
+*.a
+*.o
+*.asm
+*.bak-orig

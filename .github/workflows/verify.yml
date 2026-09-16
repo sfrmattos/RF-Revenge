@@ -1,0 +1,16 @@
+name: verify
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: platformio/platformio-core-action@v1
+      - name: Host test
+        run: g++ -std=c++17 -Wall -Wextra -Isrc -DWIFI_DEAUTH_ENABLE=1 -DJAM_ENABLE=1 test/test_host.cpp -o /tmp/host_tests && /tmp/host_tests
+      - name: Build
+        run: pio run -e rfclown_alt
