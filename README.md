@@ -1,4 +1,4 @@
-# RF Revenge
+# RF Revenge for RF-Clown
 
 ![RF Revenge identity](assets/rf-revenge.png)
 
@@ -9,6 +9,8 @@ RF Revenge is independent firmware for the ESP32-based RF-Clown V2 device. It su
 I bought an RF-Clown 2.0 to explore RF gadgets. I considered the hardware good and wanted different firmware for my personal requirements, so I wrote this firmware from scratch for the documented device. I used original project material only as a hardware and pinout reference. After my own testing, I decided to share this work with the community.
 
 Thank you to [CiferTech and the RF-Clown project](https://github.com/cifertech/RF-Clown) for documenting the hardware. RF Revenge is an independent firmware project, not a statement about the quality of the original firmware. The projects document different user-facing choices: RF-Clown documents its BLE/Bluetooth-oriented hardware project, Arduino and precompiled-binary flashing flow, and mode-indicating LED; RF Revenge documents a PlatformIO build, host checks, explicit-port flashing, diagnostics, NVS-backed settings, passive Wi-Fi proximity, management-frame test controls, 2.4 GHz JAM controls, and bounded safety controls.
+
+![Board](assets/board.png)
 
 ## Current capabilities
 
